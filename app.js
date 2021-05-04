@@ -3,11 +3,11 @@
 const express = require('express');
 const app = express();
 
-const hello = require('./src/hello/hello.js')
+const user = require('./src/user/http/user.js')
 
 const PORT = 80;
 
-app.use('/hello', hello)
+app.use('/user', user)
 
 app.use((req, res, next) => {
     res.send('Wrong routes')
