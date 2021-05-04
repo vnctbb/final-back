@@ -3,6 +3,8 @@
 const express = require('express');
 const app = express();
 
+require('dotenv').config();
+
 const user = require('./src/user/http/user.js')
 
 const PORT = 80;
